@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Juho-source/Aikidotracker.git'
+                git branch: 'main', url: 'https://github.com/Juho-source/Aikidotracker.git'
             }
         }
         stage('Build') {
