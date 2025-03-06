@@ -24,13 +24,13 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>aikidotracker</finalName>
+        <finalName>aikido</finalName>
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>
@@ -39,9 +39,6 @@
                 <version>3.13.0</version>
                 <configuration>
                     <release>21</release>
-                    <compilerArgs>
-                        <arg>--enable-preview</arg>
-                    </compilerArgs>
                 </configuration>
             </plugin>
 
@@ -80,7 +77,6 @@
                 </executions>
             </plugin>
 
-            <!-- Surefire Plugin for Running Tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -93,5 +89,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
